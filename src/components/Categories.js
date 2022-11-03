@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Categories = () => (
-  <p>Page is under construction!</p>
+  <button type="submit" className="categories-btn">Check Status!</button>
 );
 
 export default Categories;
