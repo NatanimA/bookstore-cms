@@ -13,7 +13,7 @@ const BooksList = () => {
     <div className="book-list" key={book.id}>
       <div className="book-info">
         <span className="book-genre">{book.genre}</span>
-        <h3 className="book-name">{book.name}</h3>
+        <h3 className="book-name">{book.title}</h3>
         <span>{book.author}</span>
         <div className="button-container">
           <button id={book.id} type="button" className="button-item">Comments</button>
