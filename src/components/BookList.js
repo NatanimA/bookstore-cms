@@ -12,7 +12,7 @@ const BooksList = () => {
   const bookList = bookState.map((book) => (
     <div className="book-list" key={book.id}>
       <div className="book-info">
-        <span className="book-genre">{book.genre}</span>
+        <span className="book-genre">{book.category}</span>
         <h3 className="book-name">{book.title}</h3>
         <span>{book.author}</span>
         <div className="button-container">
