@@ -1,4 +1,4 @@
-const CHECK_STATUS = 'bookstore-cms/books/REMOVE_BOOK';
+const CHECK_STATUS = 'bookstore-cms/categories/CHECK_STATUS';
 
 const initialState = '';
 
