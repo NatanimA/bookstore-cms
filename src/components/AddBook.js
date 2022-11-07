@@ -42,7 +42,7 @@ const AddBook = () => {
 
         <input
           key="title-input"
-          name='title'
+          name="title"
           value={inputText.title}
           onChange={changeHandler}
           className="form-input"

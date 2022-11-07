@@ -6,7 +6,6 @@ const BooksList = () => {
   const bookState = useSelector((state) => state.booksReducer);
   const dispatch = useDispatch();
   const removeHandler = (e) => {
-    console.log(e)
     dispatch(removeBook(e.target.id));
   };
 
@@ -19,7 +18,7 @@ const BooksList = () => {
         <div className="button-container">
           <button id={book.id} type="button" className="button-item">Comments</button>
           <button onClick={removeHandler} id={book.id} type="button" className="button-item">Remove</button>
-          <button  id={book.id} type="button" className="button-item">Edit</button>
+          <button id={book.id} type="button" className="button-item">Edit</button>
         </div>
       </div>
       <p>{book.complete}</p>
