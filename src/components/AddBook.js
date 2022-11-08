@@ -25,6 +25,8 @@ const AddBook = () => {
       title: inputText.title,
       author: inputText.author,
       category: inputText.category,
+      complete: '0%',
+      currentChapter: 'Chapter:1',
     };
     dispatch(addBook(newBook));
     setInputText({
