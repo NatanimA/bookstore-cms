@@ -117,3 +117,7 @@ a {
   color: black;
   font-weight: bold;
 }
+
+.categories-container {
+  margin: 50px;
+}
