@@ -4,7 +4,13 @@ import { loadBooks, removeBook } from '../redux/books/books';
 
 const BooksList = () => {
   const dispatch = useDispatch();
-  useEffect(() => { dispatch(loadBooks()); }, []);
+  const useFetching = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+      dispatch(loadBooks());
+    }, [dispatch]);
+  };
+  useFetching();
   const bookState = useSelector((state) => state.booksReducer);
 
   const removeHandler = (e) => {

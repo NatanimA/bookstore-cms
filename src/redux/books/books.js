@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 
 const ADD_BOOK = 'bookstore-cms/books/ADD_BOOK';
@@ -26,7 +25,6 @@ export const loadBooks = () => async (dispatch) => {
       payload: data,
     });
   }
-  console.log('Response', data);
 };
 
 export const addBook = (payload) => async (dispatch) => {
@@ -39,11 +37,9 @@ export const addBook = (payload) => async (dispatch) => {
       author: payload.author,
       title: payload.title,
     },
-  }).then(res => {
-    return res
-  });
+  }).then((res) => res);
 
-  if (response.data === "Created") {
+  if (response.data === 'Created') {
     dispatch({
       type: ADD_BOOK,
       payload,
@@ -52,10 +48,7 @@ export const addBook = (payload) => async (dispatch) => {
 };
 
 export const removeBook = (id) => async (dispatch) => {
-  const response = await axios.delete(`${APP}/${id}`).then( res => {
-    return res
-  });
-  console.log("Delete Response is: ", response)
+  const response = await axios.delete(`${APP}/${id}`).then((res) => res);
   if (response.status === 201) {
     dispatch({
       type: REMOVE_BOOK,
