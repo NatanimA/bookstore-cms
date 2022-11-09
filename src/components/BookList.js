@@ -11,7 +11,7 @@ const BooksList = () => {
     }, [dispatch]);
   };
   useFetching();
-  const bookState = useSelector((state) => state.booksReducer);
+  const bookState = useSelector((state) => state.bookReducer);
 
   const removeHandler = (e) => {
     dispatch(removeBook(e.target.id));
