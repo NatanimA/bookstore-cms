@@ -21,7 +21,7 @@ const AddBook = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     const newBook = {
-      id: uuidv4(),
+      item_id:uuidv4(),
       title: inputText.title,
       author: inputText.author,
       category: inputText.category,
@@ -38,7 +38,7 @@ const AddBook = () => {
 
   return (
 
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} noValidate>
       <h1 className="form-header">Add New Book</h1>
       <div className="form-control-container">
 
@@ -50,6 +50,7 @@ const AddBook = () => {
           className="form-input"
           type="text"
           placeholder="Book title"
+          required
         />
 
         <input
@@ -59,6 +60,7 @@ const AddBook = () => {
           placeholder="Book author"
           value={inputText.author}
           onChange={changeHandler}
+          required
         />
 
         <select
@@ -67,6 +69,7 @@ const AddBook = () => {
           onChange={changeHandler}
           value={inputText.category}
           className="form-select"
+          required
         >
           <option value="" hidden>Category</option>
           <option value="Action">Action</option>
