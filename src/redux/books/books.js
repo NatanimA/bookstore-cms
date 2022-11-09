@@ -36,6 +36,8 @@ export const addBook = (payload) => async (dispatch) => {
       category: payload.category,
       author: payload.author,
       title: payload.title,
+      currentChapter: payload.currentChapter,
+      complete:payload.complete
     },
   }).then((res) => res);
 
