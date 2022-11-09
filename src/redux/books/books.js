@@ -37,7 +37,7 @@ export const addBook = (payload) => async (dispatch) => {
       author: payload.author,
       title: payload.title,
       currentChapter: payload.currentChapter,
-      complete:payload.complete
+      complete: payload.complete,
     },
   }).then((res) => res);
 
