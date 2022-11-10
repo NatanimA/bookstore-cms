@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,800;1,100;1,400;1,900&display=swap');
+
 body {
   position: relative;
   margin: 0;
@@ -95,10 +96,10 @@ form {
 
 ul {
   display: flex;
-    flex-grow: 1;
-    list-style-type: none;
-    grid-gap: 40px;
-    gap: 40px;
+  flex-grow: 1;
+  list-style-type: none;
+  grid-gap: 40px;
+  gap: 40px;
 }
 
 a {
@@ -108,9 +109,9 @@ a {
 
 .header-name {
   font-family: "Montserrat", sans-serif;
-    font-size: 1.875rem;
-    font-weight: 700;
-    color: #0290ff;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0290ff;
 }
 
 .active {
@@ -152,7 +153,6 @@ a {
 .progress-container {
   display: flex;
   flex-direction: row;
-
 }
 
 .percent-complete {
@@ -171,26 +171,26 @@ a {
 }
 
 .book-genre {
-      font-weight: 500;
-        color: #525252;
+  font-weight: 500;
+  color: #525252;
 }
 
 .book-author {
-  font-size: .875rem;
-    font-weight: 400;
-    color: #4386bf;
-    margin-bottom: 2rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #4386bf;
+  margin-bottom: 2rem;
 }
 
 .current-chapter-header {
   font-family: 'Poppins', sans-serif;
-      font-weight: 300;
-        color: #121212;
+  font-weight: 300;
+  color: #121212;
 }
 
 .form-header {
   font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -.18px;
-    color: #888;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+  color: #888;
 }
