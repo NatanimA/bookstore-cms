@@ -122,6 +122,15 @@ a {
 .categories-container {
   margin: 50px;
 }
+.button-container {
+  padding-top: 1rem;
+}
+
+.item-comments {
+  margin-left: 0%;
+  text-align: left;
+  padding-left: 0rem;
+}
 
 .error-span {
   color: red;
@@ -146,8 +155,7 @@ a {
   height: 4.25rem;
   border: 5px solid #307bbe;
   border-left-color: #e8e8e8;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: rotate(70deg);
 }
 
 .progress-container {

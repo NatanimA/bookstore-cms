@@ -23,7 +23,7 @@ const BooksList = () => {
         <h3 className="book-name">{book.title}</h3>
         <span className="book-author">{book.author}</span>
         <div className="button-container">
-          <button id={book.item_id} type="button" className="button-item">Comments</button>
+          <button id={book.item_id} type="button" className="button-item item-comments">Comments</button>
           <button onClick={removeHandler} id={book.item_id} type="button" className="button-item">Remove</button>
           <button id={book.item_id} type="button" className="button-item">Edit</button>
         </div>
