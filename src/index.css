@@ -1,35 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,800;1,100;1,400;1,900&display=swap');
 body {
+  position: relative;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
+  padding: 4%;
+  background-color: #f5f6fa;
+  height: 100vh;
 }
 
 .book-list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin: 25px;
+  gap: 1rem;
 }
 
 .book-list {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid silver;
-  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 2rem;
+  border: 1px solid #e8e8e8;
+  padding: 1rem;
 }
 
 button {
@@ -44,23 +41,20 @@ button {
   color: #fff;
 }
 
-#root {
-  height: 100%;
-}
-
 .App {
-  height: 100vh;
-}
-
-.book-page-container {
-  height: 100vh;
+  margin: 0;
+  padding: 0 0 8%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 5%);
+  background-color: #fafafa;
 }
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 20px;
+  margin: 0 2rem 0 2rem;
+  border-top: 2px solid #e8e8e8;
   padding: 50px;
 }
 
@@ -91,17 +85,20 @@ form {
   border-right: 2px solid silver;
 }
 
-header {
+.nav-link-container {
+  padding: 24px 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
   display: flex;
-  padding: 2rem;
+  align-items: center;
 }
 
 ul {
   display: flex;
-  width: 100%;
-  list-style-type: none;
-  margin: 2rem;
-  justify-content: space-between;
+    flex-grow: 1;
+    list-style-type: none;
+    grid-gap: 40px;
+    gap: 40px;
 }
 
 a {
@@ -109,8 +106,11 @@ a {
   letter-spacing: 2px;
 }
 
-.cms-header {
-  color: #4386bf;
+.header-name {
+  font-family: "Montserrat", sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #0290ff;
 }
 
 .active {
@@ -127,4 +127,70 @@ a {
   font-size: 12px;
   grid-row: 2;
   grid-column-end: 1;
+}
+
+.circular-progress-container {
+  width: 5.625rem;
+  height: 5.625rem;
+  padding: 0.63rem 0.625rem 0.75rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-progress {
+  position: absolute;
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.percent-complete {
+  font-size: 1.5rem;
+}
+
+.progress-detail {
+  margin: 0;
+}
+
+.progress-divider {
+  width: 0.125rem;
+  height: 5.375rem;
+  margin: 20px 3.688rem 0 2.938rem;
+  background-color: #e8e8e8;
+}
+
+.book-genre {
+      font-weight: 500;
+        color: #525252;
+}
+
+.book-author {
+  font-size: .875rem;
+    font-weight: 400;
+    color: #4386bf;
+    margin-bottom: 2rem;
+}
+
+.current-chapter-header {
+  font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+        color: #121212;
+}
+
+.form-header {
+  font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -.18px;
+    color: #888;
 }

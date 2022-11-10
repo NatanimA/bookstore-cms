@@ -11,12 +11,16 @@ export const loadBooks = () => async (dispatch) => {
   const response = await axios.get(APP);
   const res = await response.data;
   const data = Object.entries(res).map(([key, value]) => {
-    const { title, category, author } = value[0];
+    const {
+      title, category, author, complete, currentChapter,
+    } = value[0];
     return {
       item_id: key,
       title,
       category,
       author,
+      complete,
+      currentChapter,
     };
   });
   if (data) {
