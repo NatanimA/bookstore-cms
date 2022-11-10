@@ -121,3 +121,10 @@ a {
 .categories-container {
   margin: 50px;
 }
+
+.error-span {
+  color: red;
+  font-size: 12px;
+  grid-row: 2;
+  grid-column-end: 1;
+}
