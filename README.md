@@ -3,7 +3,7 @@
 > This is a project that will help you Organize your books
 
 # Live Link 
-- https://dainty-treacle-081482.netlify.app/
+- https://natanim-bookstorecms.netlify.app/
 
 
 ## Built With
@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Book-cms](https://natanim-bookstorecms.netlify.app/)
 
 
 ## Getting Started
