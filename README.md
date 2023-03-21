@@ -1,6 +1,6 @@
 # Bookstore Cms App
 
-> This is a project that will help you Organize your books
+> A web application that will help you organize your book online, where you can see the progress you made throughout the application.
 
 # Live Link 
 - https://natanim-bookstorecms.netlify.app/
